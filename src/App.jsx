@@ -1,14 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import Navbar from "./components/layout/Navbar.jsx";
+import Home from "./pages/Home.jsx";
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-slate-900">
-      <h1 className="text-4xl font-bold text-white">
-        Cheatham Contracting – Starter
-      </h1>
+    <div className="min-h-screen flex flex-col bg-white">
+      <Navbar active="home" variant="home" />
+      <main className="flex-1">
+        <Home />
+      </main>
+      {/* Footer will go here later */}
     </div>
   );
 }
