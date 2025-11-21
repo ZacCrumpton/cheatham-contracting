@@ -12,6 +12,7 @@ function WhoWeAreSection() {
         imageLeft={true}
         titleSize="text-[90px]"
         bodySize="text-[25px]"
+        baseOffset={0}
 
         />
     )
